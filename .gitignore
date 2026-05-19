@@ -1,0 +1,14 @@
+# Virtual Environments
+myenv/
+v/
+
+# Databases
+*.db
+test.db
+
+# Python caches
+__pycache__/
+.pytest_cache/
+
+# Env file
+.env
