@@ -157,6 +157,7 @@ def refresh(request: Request, response: Response, db: Session = Depends(get_db))
             "username": db_user.username,
         }
     )
+
 @router.post("/logout")
 def logout(
     user: UserLogout, response: Response, db: Session = Depends(get_db)):
@@ -178,7 +179,7 @@ def logout(
             "is_active": False,
         }
     )
-    
+   
 @router.get("/verify-email")
 def verify_email(token: str, db: Session = Depends(get_db)):
 

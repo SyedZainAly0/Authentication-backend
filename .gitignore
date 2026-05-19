@@ -7,8 +7,8 @@ v/
 test.db
 
 # Python caches
-__pycache__/
-.pytest_cache/
+__pycache__/*
+.pytest_cache/*
 
 # Env file
 .env
